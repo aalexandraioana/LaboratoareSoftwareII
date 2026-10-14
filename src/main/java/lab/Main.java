@@ -6,8 +6,7 @@ import java.util.*;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
 
-    static List<Integer> generateRandomIntegerList(List<Integer> list, int size, int origin, int bound)
-    {
+    static List<Integer> generateRandomIntegerList(List<Integer> list, int size, int origin, int bound) {
         int r;
         for (int i = 0; i < size; i++) {
             Random rand = new Random();
@@ -17,6 +16,7 @@ public class Main {
 
         return list;
     }
+
     static void main() {
 
         System.out.println("Aplicatia 1");
@@ -117,17 +117,15 @@ public class Main {
         System.out.println("-------------------------------------------------------------------------------------------");
         System.out.println("Studenti in ordine alfabetica dupa grupe: ");
 
-        for (Student s : studenti)
-        {
+        for (Student s : studenti) {
             s.afiseazaStudent();
         }
 
         List<Student> integralisti = new ArrayList<>();
         List<Student> restantieri = new ArrayList<>();
 
-        for (Student s : studenti)
-        {
-            if(s.esteIntegralist())
+        for (Student s : studenti) {
+            if (s.esteIntegralist())
                 integralisti.add(s);
             else
                 restantieri.add(s);
@@ -138,8 +136,7 @@ public class Main {
         System.out.println("-------------------------------------------------------------------------------------------");
         System.out.println("Studenti integralisti in ordinea descrescatoare a notelor obtinute: ");
 
-        for (Student s : integralisti)
-        {
+        for (Student s : integralisti) {
             s.afiseazaStudent();
         }
 
@@ -148,8 +145,7 @@ public class Main {
         System.out.println("-------------------------------------------------------------------------------------------");
         System.out.println("Studenti restantieri in ordinea crescatoare a numarului de restante: ");
 
-        for (Student s : restantieri)
-        {
+        for (Student s : restantieri) {
             s.afiseazaStudent();
         }
     }
